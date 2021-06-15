@@ -231,3 +231,29 @@ table{
     box-shadow: none;
     width:100%
 }
+
+footer{
+    height : 40px;
+    width:100%;
+    position: absolute;
+    left:0;
+    bottom:0;
+    background-color: rgb(119, 114, 107);
+    border:2px solid beige;
+    padding:40px;
+}
+
+footer>.personal{
+    padding: 0 100px;
+    float:left;
+}
+footer>.personal>a{
+    color: beige;
+    padding: 0 80px 50px 50px;
+}
+footer>.personal>a>img{
+    border:2px solid beige;
+    background-color:beige;
+}
+
+
