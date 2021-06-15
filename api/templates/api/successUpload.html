@@ -1,0 +1,9 @@
+{% extends "api/base.html" %}
+
+{% block content %}
+<h2>Sucessfully Uploaded</h2>
+<ul class = 'success' >
+    <a href ="{% url 'upload' %}">Upload More</a>
+    <a href = "{% url 'viewResume' %}">View Resume</a>
+</ul>
+{% endblock %}

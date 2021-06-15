@@ -1,0 +1,10 @@
+{% extends "api/base.html" %}
+{% block content %}
+<h2>Upload your Resumes</h2>
+    <form class='upload_form' method ="post"  enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type ="submit" action = '{% url "successUpload" %}'>Click to Submit</button>
+    </form>
+    
+{% endblock %}

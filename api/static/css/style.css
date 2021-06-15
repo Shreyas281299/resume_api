@@ -1,0 +1,233 @@
+body{
+    margin:0px;
+    padding:0px;
+    background-color: rgb(112, 108, 114);
+    display:grid;
+    place-items: center;
+}
+
+.upload{
+    float:right;
+    font-size: 25px;
+
+    margin:10px 100px;
+}
+
+.logo{
+    padding:0 230px 0 220px;
+    height:50px;
+    width:50px;
+    float:left;
+}
+.logo:hover{
+    transform:scale(1.1);
+}
+
+header{
+
+    border:4px solid beige;
+    width:100%;
+    padding:15px;
+    background-color:rgb(156, 153, 148);
+}
+header > a{
+    float:left;
+    font-size:35px;
+    margin: 0px 0px 0px 20px;
+    color:rgb(56, 56, 56);
+    text-decoration: none;
+}
+header > a:hover{
+    color:antiquewhite;
+}
+
+
+body>h2{
+    text-transform: uppercase;
+    width:100%;
+    color: rgb(119, 114, 107);
+    padding:10px;
+    background-color:beige;
+    font-size: 30px;
+    text-align: center;
+
+}
+
+.container{
+    display:flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.upload_box{
+    margin:15px;
+    text-transform: uppercase;
+    width:450px;
+    font-size: medium;
+    background-color: beige;
+    border-radius: 50px;
+    box-shadow: 5px 5px 10px black;
+    outline: none;
+}
+
+::-webkit-file-upload-button{
+    text-transform: uppercase;
+    padding:10px;
+    background-color: rgb(112, 108, 114);
+}
+::-webkit-file-upload-button:hover{
+    background-color:rgb(156, 153, 148);
+}
+
+button{
+    margin:0% 40%;
+    width:100px;
+    background-color: beige;
+    border-radius: 50px;
+    box-shadow: 5px 5px 10px black;
+}
+
+button:hover{
+    color: beige;
+    background-color: rgb(112, 108, 114);
+}
+
+p{
+    color:rgb(156, 153, 148);
+    text-shadow: 1px 1px 1px black;
+        
+}
+p>a{
+    color: beige;
+    text-decoration: none;
+}
+
+header>nav>ul>a{
+    float:right;
+    padding:0 10px ;
+    text-decoration: none;
+    color:rgb(56, 56, 56);
+    font-size:larger;
+}
+
+header>nav>ul>a:hover{
+    color:antiquewhite;;
+}
+
+body>table{
+    width:auto;
+    padding:0px 0px 20px 0px;
+    margin:10px;
+}
+
+.person_name{
+    text-decoration: none;
+    color: beige;
+    
+}
+.person_name:hover{
+    color:rgb(56, 56, 56)
+}
+
+
+
+th{
+    padding:5px 30px;
+}
+table{
+    border:1px solid black;
+}
+
+.person_resume{
+    font-size : 12px;
+    text-decoration: none;
+    color:rgb(156, 153, 148);
+}
+
+.person_resume:hover{
+    text-decoration: none;
+    color: beige;
+}
+
+.Heading{
+    background-color:beige;
+}
+
+.email{
+    color:beige;
+}
+.phone  {
+    font-size: small;
+    width:100px;
+    color:beige;
+}
+
+.success>a{
+    font-size: 25px;
+    padding:40px;
+    text-decoration: none;
+    color:rgb(56, 56, 56);
+    
+    width:100%;
+}
+.success{
+    text-align: center;
+    width:100%;
+    background-color: beige;
+}
+
+.info{
+    text-align: center;
+    width:100%;
+    background-color: beige;    
+}
+
+.info>p{
+    text-shadow: none;
+    color:rgba(78, 76, 76, 0.856);
+    font-size: 25px;
+}
+
+.info>ul{
+    color:rgba(78, 76, 76, 0.856);
+    padding:7px;
+    list-style: none;
+    text-decoration: none;
+}
+
+.person_id{
+    color:beige;
+}
+
+.api_form{
+    float:left;
+    width:100%;
+    padding: 20px;
+}
+.api_form>input{
+    margin:0 0 0 40%;
+    padding:0;
+    transform: scale(1.2);
+}
+.api_form>button{
+    color: rgb(56, 56, 56);
+    box-shadow: none;
+    text-align: center;
+    margin:0;
+    padding:0;
+    transform: scale(1.3);
+}
+
+.uplaod_form{
+    display: flex;
+    flex-direction: column;
+    padding:10px;
+    background-color:rgb(126, 123, 118);
+    border:4px solid beige;
+}
+
+.uplaod_form>button{
+    margin:0 0 0 1%;
+    box-shadow: none;
+    width:100%
+}

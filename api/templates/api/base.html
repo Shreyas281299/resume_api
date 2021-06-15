@@ -1,0 +1,45 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{%  static  'css/style.css'  %}">
+    <title>Resume API</title>
+</head>
+<header>
+    
+    <a href="{% url 'main_home' %}" >Resume Extractor API</a>
+    <img src="{% static 'css/cv.png' %}" class="logo"><nav>
+        <ul>
+            <a href="{% url 'getXls' %}">Get .xls</a>
+            <a href="{% url 'getApi' %}">View API response</a>
+            <a href="{% url 'viewResume' %}"> View Resumes</a>
+            <a href="{% url 'upload' %}"> Upload Resume</a>
+            <a href="{% url 'main_home' %}">Home</a>    
+            
+           
+        </ul>
+    </nav>
+</header>
+<body>
+    {% block content %}
+    <h2>This is my web-app
+    </h2>
+    <div class='info'>
+        <p>
+        The web-app is pretty self explanatory
+        
+            <ul>
+                <li>You go to the upload page</li>
+                <li>Upload your resume</li>
+                <li>All the details will be extracted and saved</li>
+            </ul>
+        </p>
+    </div>
+    
+    {% endblock content %}
+</body>
+
+</html>

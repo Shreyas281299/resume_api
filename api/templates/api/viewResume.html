@@ -1,0 +1,32 @@
+{% extends "api/base.html" %}
+
+{% block content %}
+
+
+<table>
+    <thead class = 'Heading'>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Resume Location</th>
+            <th>Email</th>
+            <th>Phone No</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for person in resumes%}
+        <tr>
+            <th class ="person_id" >{{ person.id }}</th>
+            <th><a class = 'person_name' href ="/api/apiId/{{person.id}}" >{{person.Name}}</a></th>
+            
+            <th><a class = 'person_resume'">{{person.resume}}</a></th>
+            <th class = 'email'>{{person.email}}</th>
+            <th class = 'phone'>{{person.phone}}</th>
+
+        </tr>
+    </tbody>
+        {% endfor %}
+
+
+</table>
+{% endblock %}
