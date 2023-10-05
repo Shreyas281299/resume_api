@@ -23,6 +23,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('',views.Home,name = 'main_home'),
     path('api/',include('api.urls')),
+    # Test comment
 ]
 
 
